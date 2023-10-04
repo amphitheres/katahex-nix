@@ -26,7 +26,7 @@
                        echo '${tcd}' >> CMakeLists.txt
                        '';
                    }
-             ));
+                )).override { enableGPU = true ; enableTcmalloc = false ; };
 
            lizzieyzy =
              let
